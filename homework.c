@@ -2,12 +2,11 @@
 
 int main() {
     float batarya_sicakligi;
-    float batarya_sicakligi;
     int sarj_yuzdesi;
     char kapi_durumu;
     int fren_pedali;
 
-    printf("--- ELEKTROMOBİŞL GÜVENLİK KONTROLÜ ---\n");
+    printf("--- ELEKTROMOBİL GÜVENLİK KONTROLÜ ---\n");
 
     printf("Batarya Sıcaklığı (C): ");
     scanf("%f", &batarya_sicakligi);
@@ -40,7 +39,7 @@ int main() {
         printf("SONUÇ: KRİTİK HATA: Motor Aşırı Isındı! Sürüş Engellendi.\n");
     } 
     else if (sarj_yuzdesi < 10) {
-        printf("SONUÇ: UYARI: Batarya Kritik Seviyede! Şürüş Başlatılamaz.\n");
+        printf("SONUÇ: UYARI: Batarya Kritik Seviyede! Sürüş Başlatılamaz.\n");
     } 
     else if (kapi_durumu == 'A') {
         printf("SONUÇ: HATA: Kapılar Açık! Lütfen Kapatınız.\n");
@@ -53,4 +52,5 @@ int main() {
     }
 
     return 0;
+
 }
